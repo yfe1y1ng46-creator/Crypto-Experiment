@@ -34,3 +34,40 @@ python mtc3_sha1_only.py
 - MTC3 SHA1：`67ae1a64661ac8b4494666f58c4822408dd0a3e4`
 
 说明：第 3、4、6 题恢复的明文包含歌词内容，报告中使用长度、哈希和重新加密校验描述结果。
+
+## Experiment 2
+
+目录：`experiment2/`
+
+包含 MTC3 ePassport MRZ AES key 题，以及 Cryptopals Set 2 的 AES ECB/CBC、PKCS#7、oracle、cut-and-paste 和 bit flipping 相关实现。
+
+```powershell
+cd experiment2
+node experiment2_solution.js
+```
+
+关键结果：
+
+- MTC3 completed MRZ：`12345678<8<<<1110182<1111167<<<<<<<<<<<<<<<4`
+- MTC3 AES key：`ea8645d97ff725a898942aa280c43179`
+- MTC3 codeword：`Kryptographie`
+- ECB cut-and-paste：`role=admin`
+- CBC bitflipping admin：`true`
+
+## Experiment 3
+
+目录：`experiment3/`
+
+包含 Project Euler 182 的 RSA unconcealed messages 求解，以及 Cryptopals Challenge 39 的 RSA 实现。
+
+```powershell
+cd experiment3
+python experiment3_solution.py
+```
+
+关键结果：
+
+- Euler 182 minimum unconcealed messages：`9`
+- Euler 182 number of best e：`217800`
+- Euler 182 sum of e：`399788195976`
+- RSA roundtrip ok：`True`
