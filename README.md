@@ -71,7 +71,8 @@ python challenge16_cbc_bitflipping.py
 
 ```powershell
 cd experiment3
-python experiment3_solution.py
+python project_euler_182.py
+python challenge39_rsa.py
 ```
 
 关键结果：
