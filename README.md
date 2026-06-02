@@ -43,7 +43,16 @@ python mtc3_sha1_only.py
 
 ```powershell
 cd experiment2
-node experiment2_solution.js
+python -m pip install -r requirements.txt
+python mtc3_epassport_aes.py
+python challenge09_pkcs7_padding.py
+python challenge10_cbc_mode.py
+python challenge11_ecb_cbc_detection_oracle.py
+python challenge12_byte_at_a_time_ecb_simple.py
+python challenge13_ecb_cut_and_paste.py
+python challenge14_byte_at_a_time_ecb_harder.py
+python challenge15_pkcs7_validation.py
+python challenge16_cbc_bitflipping.py
 ```
 
 关键结果：
